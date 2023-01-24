@@ -15,26 +15,24 @@ class StoreController extends Controller
 
     public function viewHome(){
         // view home\
-        $products = Product::SimplePaginate(8);
+        $products = Product::SimplePaginate(12);
         return view('memberHomePage')->with('products', $products);
     }
 
     public function viewHome2(){
         // view home\
-        $products = Product::SimplePaginate(8);
-
-
+        $products = Product::SimplePaginate(12);
         return view('adminHomePage')->with('products', $products);
     }
 
     public function viewPage(){
-        $products = Product::SimplePaginate(4);
+        $products = Product::SimplePaginate(6);
 
         return view('memberSearchPage')->with('products', $products);
     }
 
     public function viewPage2(){
-        $products = Product::SimplePaginate(4);
+        $products = Product::SimplePaginate(6);
 
         return view('adminSearchPage')->with('products', $products);
     }

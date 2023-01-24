@@ -18,14 +18,14 @@ class WelcomePageController extends Controller
 
     public function index_member(){
         // view home\
-        $products = Product::SimplePaginate(8);
+        $products = Product::SimplePaginate(12);
 
         return view('memberHomePage')->with('products', $products);
     }
 
     public function index_admin(){
         // view home\
-        $products = Product::SimplePaginate(8);
+        $products = Product::SimplePaginate(12);
 
         return view('adminHomePage')->with('products', $products);
     }
