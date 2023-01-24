@@ -61,8 +61,6 @@ a:hover{
     
     <footer>
         <div class="footer">
-            <p>Copyright &copy;2021 <img src="{{asset('storage/images/welcome_page/DUOQLO.png')}}" class="width="10" height="20"> Online boutique that provides you with various clothes to suit your various activities</p>
-
             <ul class="list">
                 <li>
                     <a href="#">Privacy Policy</a>

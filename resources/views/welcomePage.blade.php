@@ -15,7 +15,7 @@
                 <div class="gradientImage"><img src="{{asset('storage/images/welcome_page/welcome3_bg.jpg')}}" alt=""></div>
                 <div class="carousel-caption d-none d-md-block" style="height:60%;">
                     <h1 class="text-center" style="color: white;">Welcome to <img src="{{asset('storage/images/welcome_page/DUOQLO.png')}}" style="width: 100px; height: 100px;"> </h1>
-                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online boutique that provides you with various clothes to suit your various activities</p>
+                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online Store offering fashion and quality at the best price in sustainable way</p>
             </br>
                     <a href="{{ route('index_register') }}" class="btn btn-lg btn-danger">Sign Up</a>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="gradientImage"><img src="{{asset('storage/images/welcome_page/welcome2_bg.jpg')}}" alt=""></div>
                 <div class="carousel-caption d-none d-md-block" style="height:60%;">
                     <h1 class="text-center" style="color: white;">Welcome to <img src="{{asset('storage/images/welcome_page/DUOQLO.png')}}" style="width: 100px; height: 100px;"> </h1>
-                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online boutique that provides you with various clothes to suit your various activities</p>
+                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online Store offering fashion and quality at the best price in sustainable way</p>
             </br>
                     <a href="{{ route('index_register') }}" class="btn btn-lg btn-danger">Sign Up</a>
                 </div>
@@ -35,7 +35,7 @@
                 <div class="gradientImage"><img src="{{asset('storage/images/welcome_page/welcome_bg.jpg')}}" alt=""></div>
                 <div class="carousel-caption d-none d-md-block" style="height:60%;">
                     <h1 class="text-center" style="color: white;">Welcome to <img src="{{asset('storage/images/welcome_page/DUOQLO.png')}}" style="width: 100px; height: 100px;"> </h1>
-                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online boutique that provides you with various clothes to suit your various activities</p>
+                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online Store offering fashion and quality at the best price in sustainable way</p>
             </br>
                     <a href="{{ route('index_register') }}" class="btn btn-lg btn-danger">Sign Up</a>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="gradientImage"><img src="{{asset('storage/images/welcome_page/welcome4_bg.jpg')}}" alt=""></div>
                 <div class="carousel-caption d-none d-md-block" style="height:60%;">
                     <h1 class="text-center" style="color: white;">Welcome to <img src="{{asset('storage/images/welcome_page/DUOQLO.png')}}" style="width: 100px; height: 100px;"> </h1>
-                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online boutique that provides you with various clothes to suit your various activities</p>
+                    <p class="text-center font-weight-light" style="font-size: 22px; color: white">Online Store offering fashion and quality at the best price in sustainable way</p>
             </br>
                     <a href="{{ route('index_register') }}" class="fw-bold btn btn-lg btn-danger">Sign Up</a>
                 </div>
@@ -68,7 +68,6 @@
 
     <footer>
         <div class="footer">
-            <p>Copyright &copy;2021 <img src="{{asset('storage/images/welcome_page/DUOQLO.png')}}" class="width="10" height="20"> Online boutique that provides you with various clothes to suit your various activities</p>
 
             <ul class="list">
                 <li>
