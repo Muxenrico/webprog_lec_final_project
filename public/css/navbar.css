@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    padding-left: 50px;
+}
+.titlem {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 25px;
+    margin-top: 2px;
+}
+.titlel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+.layoutright{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
