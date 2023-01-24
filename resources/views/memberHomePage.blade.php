@@ -4,22 +4,32 @@
 
 @section('body')
 
+<style>
+*{
+    background-color: #252525;
+    padding: 0px;
+    margin: 0px;
+}
+
+</style>
+
     <div class="d-flex flex-column align-items-center mt-4">
+        <br>
         <div class="mt-5">
-            <p id="title" class="fs-1 fw-bold">Find Your Best Clothes Here!</p>
+            <p id="title" class="fs-1 fw-bold text-white">Discover your style in one click!</p>
         </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-4 g-4 m-2">
+    <div class="row row-cols-1 row-cols-6 g-4 p-5 ">
         @foreach($products as $product)
             <div class="col">
-                <div class="card h-100 text-black bg-light mb-3" style="width: 100%">
+                <div class="card h-100 text-white bg-light mb-3" style="width: 100%">
                     <img class="card-img-top" src="{{asset('storage/images/clothes/'.$product->image)}}" alt="Image Not Found" style="width: 100%; height:70%">
                     <div class="card-body">
                         <h5 class="card-title">{{ $product->name }}</h5>
                         <p class="card-text">Rp{{number_format($product->price,0,'.', '.')}}</p>
                         <div class="">
-                            <a href="/m-productDetail/{{$product->id}}" type="submit" class="btn btn-primary">More Detail</a>
+                            <a href="/m-productDetail/{{$product->id}}" type="submit" class="btn btn-danger">More Detail</a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +37,7 @@
         @endforeach
     </div>
 
-    <div class="m-5 d-flex justify-content-center">
+    <div class="p-5 d-flex justify-content-center bg-dark">
         {{ $products->withQueryString()->links() }}
     </div>
 

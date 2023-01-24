@@ -4,16 +4,30 @@
 
 @section('body')
 
-    <div class="d-flex flex-column align-items-center mt-4">
+<style>
+*{
+    background-color: #252525;
+    padding: 0px;
+    margin: 0px;
+}
+.profile{
+    color:white;
+}
+</style>
+
+</br></br>
+
+
+    <div class="text-white d-flex flex-column align-items-center">
         <div class="mt-5">
             <p id="title" class="fs-1 fw-bold">Check What You've Bought!</p>
         </div>
     </div>
 
-    <div class="col cols-row-1 colds-row-md-4 g-4 m-5">
+    <div class="col cols-row-1 colds-row-md-4 g-4 p-5">
         @foreach($transactions as $t)
-            <div class="card text-black bg-light row m-3 mx-auto">
-                <div class="w-100 m-3" style="width: 100%">
+            <div class="card text-white bg-light row m-3 mx-auto">
+                <div class="w-100 p-3" style="width: 100%">
                     <h4 class="mb-3" class="card-title">{{date("Y-m-d", strtotime($t->created_at))}}</h4>
                     @php
                         $total_price = 0

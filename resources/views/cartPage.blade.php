@@ -4,43 +4,55 @@
 
 @section('body')
 
-    <div class="d-flex flex-column align-items-center mt-4">
+<style>
+*{
+    background-color: #252525;
+    padding: 0px;
+    margin: 0px;
+}
+.profile{
+    color:white;
+}
+</style>
+</br></br>
+
+    <div class="d-flex flex-column align-items-center">
         <div class="mt-5">
-            <p id="title" class="fs-1 fw-bold">My Cart</p>
+            <p id="title" class="text-white fs-1 fw-bold">My Cart</p>
         </div>
     </div>
     <div>
     
     <div class="container-fluid d-flex justify-content-end">
-        <div class="row d-flex justify-content-end align-items-center">
+        <div class="row text-white d-flex justify-content-end align-items-center">
             <div class="col">
                 <h4>Total Price: Rp{{number_format($total_price,0,'.', '.')}}</h4>
             </div>
             <div class="col">
                 <form class="col" action="/checkout" method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-primary">Checkout({{$total_product}})</button>
+                    <button type="submit" class="btn btn-danger">Checkout({{$total_product}})</button>
                 </form>
             </div>
         </div>
     </div>
 
     </div>
-    <div class="row row-cols-1 row-cols-md-4 g-4 m-2">
+    <div class="row row-cols-1 row-cols-md-6 g-4 p-5 ">
         @foreach($products as $product)
-            <div class="col">
+            <div class="col ">
                 <div class="card h-100 text-black bg-light mb-3" style="width: 100%">
                     <img class="card-img-top" src="{{asset('storage/images/clothes/'.$product->image)}}" alt="Image Not Found" style="width: 100%; height:70%">
-                    <div class="card-body">
+                    <div class="card-body text-white">
                         <h5 class="card-title">{{ $product->name }}</h5>
                         <p class="card-text">Rp{{number_format($product->price,0,'.', '.')}}</p>
                         <p class="card-text">Qty: {{$product->cart_qty}}</p>
                         <div class="container">
                             <div class="row d-flex flex-row">
-                                <a href="/editCart/{{$product->id}}" type="submit" class="col btn btn-primary">Edit Cart</a>
+                                <a href="/editCart/{{$product->id}}" type="submit" class="col btn btn-danger" style="width: 150px">Edit Cart</a>
                             <form class="col" action="/delete-from-cart/{{$product->id}}" method="POST">
                                 @csrf
-                                <button type="submit" class="btn btn-danger">Remove From Cart</button>
+                                <button type="submit" class="btn btn-outline-danger" style="width: 150px">Remove </br>From Cart</button>
                             </form>
                         </div>
                         </div>
@@ -50,7 +62,7 @@
         @endforeach
     </div>
 
-    <div class="m-5 d-flex justify-content-center">
+    <div class="p-5 d-flex justify-content-center">
         {{ $products->withQueryString()->links() }}
     </div>
 

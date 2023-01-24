@@ -4,10 +4,24 @@
 
 @section('body')
 
-    <div class="p-5 m-5">
+<style>
+*{
+    background-color: #252525;
+    padding: 0px;
+    margin: 0px;
+}
+.profile{
+    color:white;
+}
+</style>
+
+</br></br>
+    <div class="p-5">
+
+    <div class="profile">
         <div class="border pb-5 pt-5 col-8 mx-auto d-flex flex-column justify-content-center align-items-center mt-5">
             <div class="row mx-auto">
-                <p id="title" class="fs-1 fw-bold">Edit Cart</p>
+                <p id="title" class="text-center fs-1 fw-bold">Edit Cart</p>
                 <div class="col align-items-center m-3 mx-auto">
                     <img src="{{asset('storage/images/clothes/'.$currProduct->image)}}" class="img-fluid img-thumbnail" alt="Image Not Found">
                 </div>
@@ -49,12 +63,12 @@
                                 <input name="quantity" type="number" class="form-control text-center" id="exampleInputQuantity1" aria-describedby="emailHelp" min="1" placeholder="0">
                             </div>
                             <div class="col d-flex flex-column">
-                                <button id="quantity" type="submit" class="btn btn-success">Update Cart</button>
+                                <button id="quantity" type="submit" class="btn btn-danger">Update Cart</button>
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col d-flex flex-column">
-                                <a href="/m-cart" type="button" class="btn btn-danger">Back</a>
+                            <div class="col-12 d-flex flex-column">
+                                <a href="/m-cart" type="button" class="btn btn-outline-danger">Back</a>
                             </div>
                             <div class="col">
                             </div>
@@ -63,6 +77,7 @@
                 </form>
             </div>
         </div>
+    </div>
     </div>
 
 @endsection

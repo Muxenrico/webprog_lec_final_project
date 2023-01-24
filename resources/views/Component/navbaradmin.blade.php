@@ -12,9 +12,9 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/a-home">MAI BOUTIQUE</a>
+        <a href="/a-home"><img src ="{{asset('storage/images/welcome_page/DUOQLO.png')}}" style="width: 50px; height:50px" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,10 +38,10 @@
 
             <div class="container d-flex flex-row justify-content-end">
                 <div class="row d-flex align-items-center">
-                    <a href="/add-item" class="col btn btn-outline-primary navbar-btn">Add Item</a>
+                    <a href="/add-item" class="col btn btn-outline-danger navbar-btn">Add Item</a>
                     <form class="col" action="{{ route('logout') }}" method="POST">
                         @csrf
-                        <button type="submit" class="btn btn-outline-primary navbar-btn">Sign Out</button>
+                        <button type="submit" style ="width: 100px" class="btn btn-outline-danger navbar-btn">Sign Out</button>
                     </form>
                 </div>
             </div>

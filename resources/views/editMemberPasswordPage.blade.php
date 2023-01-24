@@ -4,7 +4,22 @@
 
 @section('body')
 
-    <div class="p-5 m-5">
+<style>
+*{
+    background-color: #252525;
+    padding: 0px;
+    margin: 0px;
+}
+.profile{
+    color:white;
+}
+</style>
+
+</br></br>
+
+
+<div class="profile">
+    <div class="p-5">
         <div class="border pb-5 pt-5 col-6 mx-auto d-flex flex-column justify-content-center align-items-center mt-5">
             <p id="title" class="fs-1 fw-bold">Update Password</p>
             
@@ -30,7 +45,7 @@
                     @endif
                 </div>
                 <div class="form-group mb-3 w-100 text-center">
-                    <button type="submit" class="btn btn-success mb-1 w-100">Save Update</button>
+                    <button type="submit" class="btn btn-danger mb-1 w-100">Save Update</button>
                 </div>
             </form>
             <div class="form-group mb-3 col-6">
@@ -38,5 +53,5 @@
             </div>
         </div>
     </div>
-
+    </div>
 @endsection

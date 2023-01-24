@@ -3,9 +3,23 @@
 @section('document_title', 'Add Item')
 
 @section('body')
-    <div class="p-5 m-5">
-        <div class="border col-6 mx-auto d-flex flex-column justify-content-center align-items-center mt-5">
-            <p id="title" class="fs-1 fw-bold mt-5">Add Item</p>
+
+<style>
+*{
+    background-color: #252525;
+    padding: 0px;
+    margin: 0px;
+}
+
+form{
+    color:white;
+}
+</style>
+</br></br>
+    <div class="p-5 ">
+        <div class="form">
+        <div class="col-6 mx-auto d-flex flex-column justify-content-center align-items-center mt-5">
+            <p id="title" class="fs-1 text-white fw-bold mt-5">Add Item</p>
             <form enctype="multipart/form-data" method='POST' action='/addItem' class="mb-5" style="width: 80%">
                 {{-- CSRF --}}
                 @csrf
@@ -33,8 +47,9 @@
                     <input name="inputStock" type="number" class="form-control" id="exampleInputStock1" min="1" placeholder="≥1">
                 </div>
 
-                <button type="submit" class="btn btn-success">Add</button>
+                <button type="submit" class="btn btn-danger">Add</button>
         </form>
+        </div>
         </div>
     </div>
 
